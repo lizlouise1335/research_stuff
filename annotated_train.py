@@ -43,15 +43,9 @@ check_ctcdecoder_version()
 # ==============
 
 
-# In this kitchen, some ingredients (data) are better handled by the main chef (CPU), 
-# while others are faster to prepare with the help of the sous-chefs (GPUs). 
-# This is because the main chef (CPU) is really good at doing lots of different tasks, 
-# but not all at once, while the sous-chefs (GPUs) are great at chopping up a huge pile of vegetables 
-# (processing lots of data) really fast, but only certain kinds of vegetables.
-
-# Now, the variable_on_cpu function is like a rule in the kitchen that says, 
-# “This specific ingredient (a variable in your program) should always be 
-# prepared by the main chef (CPU), no matter what.”
+# the variable_on_cpu function is like a rule that says, 
+# “This specific variable in your program should always be 
+# prepared by this CPU, no matter what.”
 
 def variable_on_cpu(name, shape, initializer):
     r"""
