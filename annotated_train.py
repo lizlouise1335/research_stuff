@@ -127,7 +127,7 @@ def dense(name, x, units, dropout_rate=None, relu=True, layer_norm=False):
     return output
 
 
-# It's specifically for a type of memory and learning 
+# rnn_impl_lstmblockfusedcell is specifically for a type of memory and learning 
 # system called LSTM (Long Short-Term Memory). Here's how it works:
 
 # 1. **Setting the Stage**: The function starts by setting up an LSTM cell. This cell is like a tiny brain 
